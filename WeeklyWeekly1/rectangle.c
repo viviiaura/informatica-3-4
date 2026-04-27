@@ -7,6 +7,6 @@ int main(void){
     scanf("%d", &width);
     printf("Enter length: ");
     scanf("%d", &length);
-    printf("Area %d\n", width*length);
+    printf("Area %d \n", width*length);
     printf("Perimeter %d\n", 2*(width+length));
 }

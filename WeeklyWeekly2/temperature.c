@@ -2,8 +2,10 @@
 int main(void){
 
     int Celsius;
-    int Fahrenheit;
+    float Fahrenheit = (Celsius+32)*1.8;
 
     printf("Enter Celsius: ");
     scanf("%d", &Celsius);
-    printf("Enter Fahrenheit: ");
+    printf("Celsius: %d ° \n", Celsius);
+    printf("Fahrenheit: %.2f ° \n", (Celsius*1.8)+32);
+}
