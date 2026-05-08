@@ -10,19 +10,19 @@ int main(void){
 
 
     if(celsius < 0) {
-        printf("❄️ freezing temperature");
+        printf("❄️ freezing temperature \n");
     }
         else if(celsius < 10) {
-            printf("🥶 Very cold weather");
+            printf("🥶 Very cold weather \n");
         }
         else if(celsius < 20) {
-            printf("🧥 Chilly weather");
+            printf("🧥 Chilly weather \n");
         }
         else if(celsius < 30) {
-            printf("🌲 Normal weather");
+            printf("🌲 Normal weather \n");
         }
         else if(celsius < 40) {
-            printf("☀️ Hot weather");
+            printf("☀️ Hot weather \n");
         }
         else if(celsius > 40) {
             printf("🔥 VERY Hot weather \n");
