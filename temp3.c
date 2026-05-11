@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 void c_to_f(void);
+void f_to_c(void);
 
 int main(void){
-    int user_ response;
+    int user_response;
     printf("Temperature Converter\n");
     printf("Select an option: \n");
     printf("1. Celsius to Fahrenheit\n");
@@ -13,16 +14,15 @@ int main(void){
     if (user_response == 1){
         c_to_f();
 
-    } elseif(user_response ==2){
+    }
+    else if(user_response == 2){
         f_to_c();
-    }else {
+    }
+    else {
         printf("Invalid option\n");
     }
 }
-//3. Call
-c_to_f();
-f_to_c();
-}
+
 
 //2. definition
 void c_to_f(void){
@@ -36,9 +36,11 @@ float fahrenheit = (celsius*1.8)+32;
 }
 
 void f_to_c(void){
-    printf("What is the temperature in Fahrenheit? ");
-    scanf("%d",&f);
-    int c = (f - 32) / 1.8;
+
     int fahrenheit;
-    printf("%.2f°F = %d°C \n",fahrenheit, (fahrenheit - 32) / 1.8;);
+    float c = (fahrenheit-32)/1.8;
+
+    printf("What is the temperature in Fahrenheit? ");
+    scanf("%d",&fahrenheit);
+    printf("%d°F = %2.f°C \n",fahrenheit, (fahrenheit-32)/1.8);
 }
