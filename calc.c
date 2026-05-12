@@ -49,21 +49,47 @@ void add(void){
 void sub(void){
     int num1;
     int num2;
-    
+
     printf("What's your first number? ");
     scanf("%d",&num1);
 
     printf("What's your second number? ");
     scanf("%d",&num2);
 
-    printf("%d + %d \n", num1, num2);
-    printf("%d + %d = %d \n", num1, num2, num1 + num2);
+    printf("%d - %d \n", num1, num2);
+    printf("%d - %d = %d \n", num1, num2, num1 - num2);
 }
 
 void mult(void){
+    int num1;
+    int num2;
 
+    printf("What's your first number? ");
+    scanf("%d",&num1);
+
+    printf("What's your second number? ");
+    scanf("%d",&num2);
+
+    printf("%d * %d \n", num1, num2);
+    printf("%d * %d = %d \n", num1, num2, num1 * num2);
 }
 
 void div(void){
+    int num1;
+    int num2;
+     printf("What's your first number? ");
+    scanf("%d",&num1);
 
+    printf("What's your second number? ");
+    scanf("%d",&num2);
+
+    if (num2 == 0){
+        printf("Undefined??? lol \n");
+    }
+    else if (num2 > 0){
+        printf("%d / %d = %d \n", num1, num2, num1 / num2);
+    }
+    else {
+        printf("yeah idk \n");
+    }
 }
